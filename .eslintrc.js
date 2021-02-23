@@ -12,6 +12,7 @@ module.exports = {
     browser: true,
     es6: true,
     jest: true,
+    node: true,
   },
   parserOptions: {
     ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
@@ -20,7 +21,6 @@ module.exports = {
       jsx: true, // Allows for the parsing of JSX
       arrowFunctions: true,
     },
-    project: "./tsconfig.json",
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   settings: {
@@ -42,7 +42,7 @@ module.exports = {
     'global-require': 'off', // https://eslint.org/docs/rules/global-require
     'import/no-dynamic-require': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
     'no-inner-declarations': 'off', // https://eslint.org/docs/rules/no-inner-declarations
-// New rules
+    // New rules
     'class-methods-use-this': 'off',
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
